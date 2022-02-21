@@ -31,14 +31,16 @@ function most() {
 
 function szamitas() {
 	if (nev.value && lakcim.value && szuletes.value && gepjarmu.value && uzemanyag.value && fogyasztas.value && utazas.value && egysegar.value && kiindulas.value && uticel.value && tovabbiuticel.value && megtett.value) {
-		const a = parseInt(fogyasztas.value) * egysegar.value * megtett.value / 100;
-		const b = megtett.value * 15;
+		const a = Math.floor(parseFloat(fogyasztas.value) * egysegar.value * megtett.value / 100);
+		const b = Math.floor(megtett.value * 15);
 	
 		utikoltseg.innerHTML = a + " Ft";
 		amortizacio.innerHTML = b + " Ft";
 		osszeskoltseg.innerHTML = a + b + " Ft";
 	
 		nyomtat.disabled = false;
+	} else {
+		alert("Töltsd ki az összes mezőt!");
 	}
 }
 
