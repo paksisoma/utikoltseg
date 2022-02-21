@@ -73,10 +73,64 @@
 			<div class="form-group row">
 				<label for="egysegar" class="col-sm-6 col-form-label">Üzemanyag egységára:</label>
 				<div class="col-sm-5">
-					<input type="text" class="form-control" id="egysegar">
+					<input type="number" class="form-control" id="egysegar">
 				</div>
 				<div class="col-sm-1">Ft / l</div>
 			</div>
+
+			<!--A megtett út adatai-->
+			<h3>A megtett út adatai</h3>
+
+			<div class="form-group row">
+				<label for="kiindulas" class="col-sm-6 col-form-label">Kiindulási hely:</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="kiindulas">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="uticel" class="col-sm-6 col-form-label">Úticél:</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="uticel">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="tovabbiuticel" class="col-sm-6 col-form-label">További úticél:</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="tovabbiuticel">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="megtett" class="col-sm-6 col-form-label">Összes megtett távolság Google Maps alapján:</label>
+				<div class="col-sm-5">
+					<input type="number" class="form-control" id="megtett">
+				</div>
+				<div class="col-sm-1">km</div>
+			</div>
+
+			<button type="button" class="btn btn-primary" onclick="szamitas()">Ellenőrzés és számítás</button>
+
+			<!--Összesítő-->
+			<hr>
+
+			<div class="row">
+				<div class="col-sm-6">Útiköltség:</div>
+				<div class="col-sm-6" id="utikoltseg">0 Ft</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">Amortizáció:</div>
+				<div class="col-sm-6" id="amortizacio">0 Ft</div>
+			</div>
+
+			<div class="row font-weight-bold">
+				<div class="col-sm-6">Összes elszámolható költség:</div>
+				<div class="col-sm-6" id="osszeskoltseg">0 Ft</div>
+			</div>
+
+			<button type="button" class="btn btn-primary" onclick="nyomtatas()">Nyomtatás</button>
 		</form>
 	</body>
 </html>
