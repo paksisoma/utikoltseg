@@ -1,0 +1,7 @@
+function szamitas() {
+
+}
+
+function nyomtatas() {
+	
+}
