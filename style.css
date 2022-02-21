@@ -1,0 +1,14 @@
+.alairas {
+	display: none;
+}
+
+@media print
+{    
+	.alairas {
+		display: block;
+	}
+
+	#aszamitas, #anyomtatas, #forras {
+		display: none !important;
+	}
+}
