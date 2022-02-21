@@ -10,25 +10,72 @@
 
 	<body>
 		<form class="container">
+			<h1>Útiköltség-elszámolás</h1>
+
+			<!--Személyes adatok-->
+			<h3>Személyes adatok</h3>
+
 			<div class="form-group row">
-				<label for="nev" class="col-sm-2 col-form-label">Név:</label>
-				<div class="col-sm-10">
+				<label for="nev" class="col-sm-6 col-form-label">Név:</label>
+				<div class="col-sm-6">
 					<input type="text" class="form-control" id="nev">
 				</div>
 			</div>
 
 			<div class="form-group row">
-				<label for="lakcim" class="col-sm-2 col-form-label">Lakcím:</label>
-				<div class="col-sm-10">
+				<label for="lakcim" class="col-sm-6 col-form-label">Lakcím:</label>
+				<div class="col-sm-6">
 					<input type="text" class="form-control" id="lakcim">
 				</div>
 			</div>
 
 			<div class="form-group row">
-				<label for="szuletes" class="col-sm-2 col-form-label">Születési dátum:</label>
-				<div class="col-sm-10">
+				<label for="szuletes" class="col-sm-6 col-form-label">Születési dátum:</label>
+				<div class="col-sm-6">
 					<input type="date" class="form-control" id="szuletes">
 				</div>
+			</div>
+
+			<!--Gépjármű- és üzemanyagadatok-->
+			<h3>Gépjármű- és üzemanyagadatok</h3>
+
+			<div class="form-group row">
+				<label for="gepjarmu" class="col-sm-6 col-form-label">Gépjármű gyártmánya, típusa:</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="gepjarmu">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="uzemanyag" class="col-sm-6 col-form-label">Üzemanyag fajtája:</label>
+				<div class="col-sm-6">
+					<select class="form-control" id="uzemanyag">
+						<option value="benzin">Benzin</option>
+						<option value="gazolaj">Gázolaj</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="fogyasztas" class="col-sm-6 col-form-label">Fogyasztási norma:</label>
+				<div class="col-sm-6">
+					<select class="form-control" id="fogyasztas" disabled></select>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="utazas" class="col-sm-6 col-form-label">Utazás dátuma:</label>
+				<div class="col-sm-6">
+					<input type="date" class="form-control" id="utazas">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="egysegar" class="col-sm-6 col-form-label">Üzemanyag egységára:</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="egysegar">
+				</div>
+				<div class="col-sm-1">Ft / l</div>
 			</div>
 		</form>
 	</body>
