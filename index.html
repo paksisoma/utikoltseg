@@ -84,7 +84,7 @@
 				<div class="col-sm-1">Ft / l</div>
 			</div>
 
-			<span class="text-right d-block">Forrás: <a href="https://nav.gov.hu/ugyfeliranytu/uzemanyag/">https://nav.gov.hu/ugyfeliranytu/uzemanyag/</a></span>
+			<span class="text-right d-block" id="forras">Forrás: <a href="https://nav.gov.hu/ugyfeliranytu/uzemanyag/">https://nav.gov.hu/ugyfeliranytu/uzemanyag/</a></span>
 
 			<!--A megtett út adatai-->
 			<h3>A megtett út adatai</h3>
@@ -118,7 +118,7 @@
 				<div class="col-sm-1">km</div>
 			</div>
 
-			<button type="button" class="btn btn-primary" onclick="szamitas()">Ellenőrzés és számítás</button>
+			<button type="button" class="btn btn-primary" id="aszamitas" onclick="szamitas()">Ellenőrzés és számítás</button>
 
 			<!--Összesítő-->
 			<hr>
@@ -138,7 +138,16 @@
 				<div class="col-sm-6" id="osszeskoltseg">0 Ft</div>
 			</div>
 
-			<button type="button" class="btn btn-primary mb-5" onclick="nyomtatas()">Nyomtatás</button>
+			<button type="button" class="btn btn-primary mb-5" id="anyomtatas" onclick="nyomtatas()" disabled>Nyomtatás</button>
+		
+			<div id="alairas">
+				.........................................................., <span id="datum"></span>
+
+				<div>
+					..........................................................
+					<span>Aláírás</span>
+				</div>
+			</div>
 		</form>
 
 		<script src="script.js"></script>

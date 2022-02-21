@@ -15,6 +15,11 @@ const utikoltseg = document.getElementById("utikoltseg");
 const amortizacio = document.getElementById("amortizacio");
 const osszeskoltseg = document.getElementById("osszeskoltseg");
 
+let szamit = document.getElementById("aszamitas");
+let nyomtat = document.getElementById("anyomtatas");
+
+let forras = document.getElementById("forras");
+
 function szamitas() {
 	/*if (!nev.value || !lakcim.value || !szuletes.value || !gepjarmu.value) {
 		console.log("asd");
@@ -26,8 +31,14 @@ function szamitas() {
 	utikoltseg.innerHTML = a + " Ft";
 	amortizacio.innerHTML = b + " Ft";
 	osszeskoltseg.innerHTML = a + b + " Ft";
+
+	nyomtat.disabled = false;
 }
 
 function nyomtatas() {
+	/*szamit.style.display = "none";
+	nyomtat.style.display = "none";
+	forras.style.display = "none";*/
 
+	/*window.print()*/
 }
