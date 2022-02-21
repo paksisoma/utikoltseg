@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Útiköltség elszámolása</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-		<script src="script.js"></script>
 	</head>
 
 	<body>
@@ -60,7 +59,13 @@
 			<div class="form-group row">
 				<label for="fogyasztas" class="col-sm-6 col-form-label">Fogyasztási norma:</label>
 				<div class="col-sm-6">
-					<select class="form-control" id="fogyasztas" disabled></select>
+					<select class="form-control" id="fogyasztas">
+						<option value="7.6">1000 cm3-ig 7,6 l/100km</option>
+						<option value="8.6">1001-1500 cm3 között 8,6 l/100km</option>
+						<option value="9.5">1501-2000 cm3 között 9,5 l/100km</option>
+						<option value="11.4">2001-3000 cm3 között 11,4 l/100km</option>
+						<option value="13.3">3001 cm3 fölött 13,3 l/100km</option>
+					</select>
 				</div>
 			</div>
 
@@ -78,6 +83,8 @@
 				</div>
 				<div class="col-sm-1">Ft / l</div>
 			</div>
+
+			<span class="text-right d-block">Forrás: <a href="https://nav.gov.hu/ugyfeliranytu/uzemanyag/">https://nav.gov.hu/ugyfeliranytu/uzemanyag/</a></span>
 
 			<!--A megtett út adatai-->
 			<h3>A megtett út adatai</h3>
@@ -133,5 +140,7 @@
 
 			<button type="button" class="btn btn-primary mb-5" onclick="nyomtatas()">Nyomtatás</button>
 		</form>
+
+		<script src="script.js"></script>
 	</body>
 </html>
