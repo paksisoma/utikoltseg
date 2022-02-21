@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+<html lang="hu">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Útiköltség elszámolása</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<form class="container">
+			<div class="form-group row">
+				<label for="nev" class="col-sm-2 col-form-label">Név:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="nev">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="lakcim" class="col-sm-2 col-form-label">Lakcím:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="lakcim">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="szuletes" class="col-sm-2 col-form-label">Születési dátum:</label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id="szuletes">
+				</div>
+			</div>
+		</form>
+	</body>
 </html>
